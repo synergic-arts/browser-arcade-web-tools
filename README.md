@@ -1,0 +1,18 @@
+# Browser Arcade Web Tools
+
+Colección de juegos web gratuitos, estáticos y ejecutables en el navegador.
+
+- No existe servidor de aplicación ni cuenta necesaria.
+- Canvas, Web Audio, `localStorage`, eventos táctiles y service worker son las únicas dependencias de ejecución.
+- Las mejores puntuaciones se guardan en el dispositivo del jugador.
+- La primera visita puede instalar la caché offline de la aplicación.
+
+## Juegos
+
+- [Meteor Patrol](juegos/meteor-patrol/): arcade de supervivencia para teclado y pantalla táctil.
+- [Hex Path](juegos/hex-path/): rompecabezas de rutas y obstáculos generado en cada partida.
+- [Memory Layers](juegos/memory-layers/): memoria visual con iconos de cartografía y ciencia.
+
+## Desarrollo
+
+Cada juego es una página independiente y no comparte estado con los demás. Esto permite añadir nuevos juegos sin romper los existentes y facilita alojarlos directamente en GitHub Pages.
