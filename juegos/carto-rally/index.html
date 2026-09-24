@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0d1427">
+  <meta name="description" content="Juego de carreras cartográficas con circuitos, checkpoints y controles móviles.">
+  <link rel="stylesheet" href="styles.css">
+  <title>Carto Rally · Browser Arcade</title>
+</head>
+<body>
+  <main class="game">
+    <header><a href="../../">← Browser Arcade</a><span class="badge">circuitos · táctil</span><p class="eyebrow">cartografía en movimiento</p><h1>Carto Rally</h1><p class="intro">Completa tres circuitos inspirados en paisajes cartográficos, toma las curvas, atraviesa checkpoints y administra tu turbo.</p></header>
+    <section class="hud" aria-label="Estado de la carrera"><div><span>Circuito</span><b id="course">Preparación</b></div><div><span>Vuelta</span><b id="lap">0 / 3</b></div><div><span>Tiempo</span><b id="time">0.0 s</b></div><div><span>Turbo</span><b id="boost">100%</b></div></section>
+    <section class="stage"><canvas id="canvas" aria-label="Circuito de carreras cartográfico"></canvas><div class="overlay" id="overlay"><p class="eyebrow">rally de exploración</p><h2 id="overlayTitle">Carto Rally</h2><p id="overlayText">Completa las tres rutas y supera tus mejores tiempos.</p><button type="button" id="start" class="primary">Iniciar campeonato</button></div></section>
+    <section class="controls" aria-label="Controles de carrera"><div class="dpad"><button type="button" data-key="up" aria-label="Acelerar">▲</button><div><button type="button" data-key="left" aria-label="Girar a la izquierda">◀</button><button type="button" data-key="down" aria-label="Frenar">▼</button><button type="button" data-key="right" aria-label="Girar a la derecha">▶</button></div></div><div class="actions"><button type="button" id="turbo" class="turbo">Turbo <span>20%</span></button><button type="button" id="pause" class="ghost">Pausar</button><button type="button" id="restart" class="ghost">Reiniciar</button></div></section>
+    <p id="status" class="status" role="status" aria-live="polite">Flechas/WASD para conducir · espacio para usar turbo · disponible en móvil.</p>
+    <section class="tips"><span>▣ pasa por los checkpoints</span><span>◈ el turbo ayuda en las rectas</span><span>↯ fuera de pista pierdes velocidad</span></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

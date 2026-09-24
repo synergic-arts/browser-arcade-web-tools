@@ -18,6 +18,7 @@ Colección de juegos web gratuitos, estáticos y ejecutables en el navegador.
 - [Ridge Recon](juegos/ridge-recon/): exploración táctica con niebla de guerra, escaneo, anomalías, tormentas y patrullas móviles.
 - [Atlas Command](juegos/atlas-command/): campaña de tres mapas con balizas, energía, créditos, mejoras y unidades enemigas.
 - [Survey Sprint](juegos/survey-sprint/): campaña de prospección de tres zonas con rover, escáner, muestras, batería y peligros.
+- [Carto Rally](juegos/carto-rally/): campeonato de tres circuitos con checkpoints, trazada, velocidad, turbo y controles táctiles.
 
 ## Desarrollo
 
