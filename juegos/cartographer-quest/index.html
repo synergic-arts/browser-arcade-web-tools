@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1718">
+  <title>Cartographer Quest · Browser Arcade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a href="../../">← Arcade</a>
+      <div><span class="eyebrow">exploración procedural</span><h1>Cartographer Quest</h1></div>
+      <button id="pause" class="secondary" type="button">Pausa</button>
+    </header>
+    <section class="hud" aria-label="Estado de la expedición">
+      <div><span>Descubrimientos</span><strong id="found">0 / 6</strong></div>
+      <div><span>Puntos</span><strong id="score">0</strong></div>
+      <div><span>Tiempo</span><strong id="time">00:00</strong></div>
+      <div><span>Mejor tiempo</span><strong id="best">--:--</strong></div>
+      <div class="quest"><span id="questLabel">Objetivo</span><strong id="quest">Busca el primer hito</strong></div>
+    </section>
+    <section class="map-wrap">
+      <canvas id="map" width="960" height="600" aria-label="Mapa de exploración con niebla de guerra"></canvas>
+      <canvas id="minimap" width="180" height="110" aria-label="Minimapa"></canvas>
+      <div id="message" class="message">
+        <p class="eyebrow">cuaderno de campo · mapa 01</p>
+        <h2>Traza la expedición</h2>
+        <p>Recorre un paisaje generado localmente, revela la niebla de guerra y documenta seis hitos antes de que anochezca.</p>
+        <button id="start" class="primary" type="button">Comenzar exploración</button>
+        <small>WASD / flechas · pad táctil · evita agua y roquedos</small>
+      </div>
+    </section>
+    <div class="controls" aria-label="Controles táctiles">
+      <span></span><button data-key="ArrowUp" type="button">▲</button><span></span>
+      <button data-key="ArrowLeft" type="button">◀</button><button data-key="ArrowDown" type="button">▼</button><button data-key="ArrowRight" type="button">▶</button>
+    </div>
+    <p id="status" class="status" role="status">Prepara el cuaderno de campo.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

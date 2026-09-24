@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#08091b">
+  <title>Nebula Command · Browser Arcade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a href="../../">← Arcade</a>
+      <div><span class="eyebrow">arcade táctico</span><h1>Nebula Command</h1></div>
+      <button id="pause" class="secondary" type="button">Pausa</button>
+    </header>
+    <section class="hud" aria-label="Estado de la partida">
+      <div><span>Puntuación</span><strong id="score">0</strong></div>
+      <div><span>Oleada</span><strong id="wave">1</strong></div>
+      <div><span>Núcleo</span><strong id="lives">3</strong></div>
+      <div><span>Mejor</span><strong id="best">0</strong></div>
+      <div class="energy"><span>Escudo</span><i><b id="shield"></b></i></div>
+    </section>
+    <section class="arena-wrap">
+      <canvas id="arena" width="960" height="600" aria-label="Campo de batalla espacial"></canvas>
+      <div id="message" class="message">
+        <p class="eyebrow">sector 07 · defensa orbital</p>
+        <h2>Protege el núcleo</h2>
+        <p>Desplaza la nave, dispara automáticamente y usa el escudo para resistir las oleadas. Cada quinta oleada trae un comandante.</p>
+        <button id="start" class="primary" type="button">Iniciar misión</button>
+        <small>WASD / flechas · espacio para disparo manual · arrastra en pantalla</small>
+      </div>
+    </section>
+    <div class="controls" aria-label="Controles táctiles">
+      <button data-key="ArrowLeft" type="button">◀</button><button data-key="ArrowUp" type="button">▲</button>
+      <button data-key="ArrowDown" type="button">▼</button><button data-key="ArrowRight" type="button">▶</button>
+      <button id="fire" class="fire" type="button">FUEGO</button>
+    </div>
+    <p id="status" class="status" role="status">Listo para despegar.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

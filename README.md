@@ -12,6 +12,8 @@ Colección de juegos web gratuitos, estáticos y ejecutables en el navegador.
 - [Meteor Patrol](juegos/meteor-patrol/): arcade de supervivencia para teclado y pantalla táctil.
 - [Hex Path](juegos/hex-path/): rompecabezas de rutas y obstáculos generado en cada partida.
 - [Memory Layers](juegos/memory-layers/): memoria visual con iconos de cartografía y ciencia.
+- [Nebula Command](juegos/nebula-command/): shooter de oleadas con partículas, escudo, mejoras y comandantes.
+- [Cartographer Quest](juegos/cartographer-quest/): exploración procedural con niebla de guerra, minimapa y seis hitos.
 
 ## Desarrollo
 
