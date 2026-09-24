@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Tower defense cartográfico sobre un mapa de curvas de nivel.">
+  <title>Contour Defense · Browser Arcade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header><a href="../../">← Browser Arcade</a><span class="badge">estrategia · tower defense</span><p class="eyebrow">defensa de la carta</p><h1>Contour Defense</h1><p class="intro">Protege el observatorio colocando balizas de defensa sobre un mapa de curvas de nivel. Administra créditos, mejora la posición y detén cinco oleadas de drones.</p></header>
+    <section class="hud" aria-label="Estado de la partida"><div><span>Oleada</span><b id="wave">0 / 5</b></div><div><span>Créditos</span><b id="credits">100</b></div><div><span>Vidas</span><b id="lives">10</b></div><div><span>Puntos</span><b id="score">0</b></div></section>
+    <section class="stage"><canvas id="canvas" aria-label="Mapa de curvas de nivel y defensa"></canvas><div class="overlay" id="overlay"><p class="eyebrow">operación cartográfica</p><h2 id="overlayTitle">Contour Defense</h2><p id="overlayText">Coloca balizas fuera de la ruta y lanza oleadas cuando estés preparado.</p><button id="start" class="primary" type="button">Iniciar defensa</button></div></section>
+    <section class="actions" aria-label="Acciones de juego"><button id="waveBtn" class="primary" type="button">Lanzar oleada</button><button id="pause" class="ghost" type="button">Pausar</button><button id="reset" class="ghost" type="button">Reiniciar</button></section>
+    <p id="status" class="status" role="status" aria-live="polite">Toca una casilla libre del mapa para construir una baliza (35 créditos).</p>
+    <section class="tips"><span>⌖ toca el mapa para construir</span><span>◌ las balizas disparan automáticamente</span><span>⚑ sobrevive a cinco oleadas</span></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
