@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Atlas Command, campaña táctica de exploración y captura de balizas para navegador y móvil.">
+  <title>Atlas Command · Browser Arcade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game"><header class="hero"><a href="../../">← Browser Arcade</a><span class="badge">campaña táctica</span><p class="eyebrow">OPERACIÓN ATLAS · TRES MAPAS</p><h1>Atlas Command</h1><p>Captura las balizas, administra tu energía y mejora el equipo mientras el mapa se vuelve más peligroso.</p></header>
+    <section class="hud" aria-label="Estado de campaña"><span>Mapa <b id="stage">1 / 3</b></span><span>Energía <b id="energy">5</b></span><span>Balizas <b id="beacons">0 / 2</b></span><span>Créditos <b id="credits">0</b></span><span>Puntos <b id="score">0</b></span></section>
+    <section class="board-wrap"><canvas id="board" width="960" height="576" aria-label="Mapa táctico de Atlas Command"></canvas><div id="message" class="message"><p class="eyebrow">OPERACIÓN ATLAS</p><strong>Recupera la cartografía.</strong><span>Completa tres mapas, escanea la niebla y vuelve a la base después de capturar cada baliza.</span><button id="start" type="button" class="primary">Iniciar campaña</button></div></section>
+    <section class="controls"><div class="actions"><button id="scan" type="button" class="primary" disabled>⌁ Escanear <small>2 energía</small></button><button id="end" type="button" class="secondary" disabled>Terminar turno <small>↵</small></button><button id="upgrade" type="button" class="upgrade" disabled>Mejorar equipo <small>2 créditos</small></button><button id="restart" type="button" class="ghost">Nueva campaña</button></div><div class="touch" aria-label="Controles táctiles"><button type="button" data-move="up" aria-label="Mover arriba">↑</button><div><button type="button" data-move="left" aria-label="Mover izquierda">←</button><button type="button" data-move="down" aria-label="Mover abajo">↓</button><button type="button" data-move="right" aria-label="Mover derecha">→</button></div></div><p id="status" class="status" role="status">Pulsa iniciar para comenzar.</p></section>
+    <section class="legend"><span><i class="dot base"></i> Base</span><span><i class="dot beacon"></i> Baliza</span><span><i class="dot enemy"></i> Enemigo</span><span><i class="dot scan"></i> Escaneo</span><span>Flechas/WASD · espacio escanea · Enter termina turno</span></section>
+  </main>
+  <script src="app.js?v=atlas-command-1"></script>
+</body>
+</html>
