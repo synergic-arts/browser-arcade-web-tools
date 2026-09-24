@@ -14,6 +14,7 @@ Colección de juegos web gratuitos, estáticos y ejecutables en el navegador.
 - [Memory Layers](juegos/memory-layers/): memoria visual con iconos de cartografía y ciencia.
 - [Nebula Command](juegos/nebula-command/): shooter de oleadas con partículas, escudo, mejoras y comandantes.
 - [Cartographer Quest](juegos/cartographer-quest/): exploración procedural con niebla de guerra, minimapa y seis hitos.
+- [Carto Tactics](juegos/carto-tactics/): estrategia por turnos con terreno, energía, balizas y rival automático.
 
 ## Desarrollo
 
