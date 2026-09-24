@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Ridge Recon, juego táctico de exploración cartográfica que funciona localmente en el navegador.">
+  <title>Ridge Recon · Browser Arcade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game"><header class="hero"><a href="../../">← Browser Arcade</a><span class="badge">exploración táctica</span><p class="eyebrow">MISIÓN DE RECONOCIMIENTO · MAPA 02</p><h1>Ridge Recon</h1><p>Explora un paisaje desconocido, escanea anomalías y vuelve a la base antes de quedarte sin energía.</p></header>
+    <section class="hud" aria-label="Estado de la misión"><span>Turno <b id="turn">1</b></span><span>Energía <b id="energy">4</b></span><span>Descubrimientos <b id="discoveries">0 / 3</b></span><span>Puntos <b id="score">0</b></span></section>
+    <section class="board-wrap"><canvas id="board" width="960" height="600" aria-label="Mapa táctico de Ridge Recon"></canvas><div id="message" class="message"><p class="eyebrow">OPERACIÓN CARTA</p><strong>Encuentra las tres anomalías.</strong><span>Muévete por las casillas, escanea el terreno y evita las patrullas rivales.</span><button id="start" type="button" class="primary">Iniciar misión</button></div></section>
+    <section class="controls"><div class="actions"><button id="scan" type="button" class="primary" disabled>⌁ Escanear <small>2 energía</small></button><button id="end" type="button" class="secondary" disabled>Terminar turno <small>↵</small></button><button id="restart" type="button" class="ghost">Nueva misión</button></div><div class="touch" aria-label="Controles táctiles"><button type="button" data-move="up" aria-label="Mover arriba">↑</button><div><button type="button" data-move="left" aria-label="Mover izquierda">←</button><button type="button" data-move="down" aria-label="Mover abajo">↓</button><button type="button" data-move="right" aria-label="Mover derecha">→</button></div></div><p id="status" class="status" role="status">Pulsa iniciar para comenzar.</p></section>
+    <section class="legend"><span><i class="dot base"></i> Base</span><span><i class="dot target"></i> Anomalía</span><span><i class="dot sentinel"></i> Patrulla</span><span><i class="dot storm"></i> Tormenta</span><span>Flechas/WASD · espacio escanea · Enter termina turno</span></section>
+  </main>
+  <script src="app.js?v=ridge-recon-1"></script>
+</body>
+</html>

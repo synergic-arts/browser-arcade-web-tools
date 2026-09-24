@@ -15,6 +15,7 @@ Colección de juegos web gratuitos, estáticos y ejecutables en el navegador.
 - [Nebula Command](juegos/nebula-command/): shooter de oleadas con partículas, escudo, mejoras y comandantes.
 - [Cartographer Quest](juegos/cartographer-quest/): exploración procedural con niebla de guerra, minimapa y seis hitos.
 - [Carto Tactics](juegos/carto-tactics/): estrategia por turnos con terreno, energía, balizas y rival automático.
+- [Ridge Recon](juegos/ridge-recon/): exploración táctica con niebla de guerra, escaneo, anomalías, tormentas y patrullas móviles.
 
 ## Desarrollo
 
