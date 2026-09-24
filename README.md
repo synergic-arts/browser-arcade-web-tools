@@ -17,6 +17,7 @@ Colección de juegos web gratuitos, estáticos y ejecutables en el navegador.
 - [Carto Tactics](juegos/carto-tactics/): estrategia por turnos con terreno, energía, balizas y rival automático.
 - [Ridge Recon](juegos/ridge-recon/): exploración táctica con niebla de guerra, escaneo, anomalías, tormentas y patrullas móviles.
 - [Atlas Command](juegos/atlas-command/): campaña de tres mapas con balizas, energía, créditos, mejoras y unidades enemigas.
+- [Survey Sprint](juegos/survey-sprint/): campaña de prospección de tres zonas con rover, escáner, muestras, batería y peligros.
 
 ## Desarrollo
 

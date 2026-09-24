@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#091525">
+  <meta name="description" content="Juego de prospección cartográfica con campaña, escáner y controles táctiles.">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Sprint · Browser Arcade</title>
+</head>
+<body>
+  <main class="game">
+    <header><a href="../../">← Browser Arcade</a><span class="badge">campaña · táctil</span><p class="eyebrow">prospección de campo</p><h1>Survey Sprint</h1><p class="intro">Conduce el rover por tres paisajes, encuentra los puntos de muestreo y usa el pulso del escáner antes de quedarte sin batería.</p></header>
+    <section class="hud" aria-label="Estado de la misión">
+      <div><span>Zona</span><b id="mission">Preparación</b></div><div><span>Puntos</span><b id="score">0</b></div><div><span>Batería</span><b id="battery">100%</b></div><div><span>Muestras</span><b id="samples">0 / 0</b></div>
+    </section>
+    <section class="stage"><canvas id="canvas" aria-label="Mapa de juego de prospección"></canvas><div class="overlay" id="overlay"><p class="eyebrow">misión cartográfica</p><h2 id="overlayTitle">Survey Sprint</h2><p id="overlayText">Completa tres zonas y recoge todos los puntos de muestreo.</p><button type="button" id="start" class="primary">Iniciar campaña</button></div></section>
+    <section class="controls" aria-label="Controles">
+      <div class="dpad"><button type="button" data-key="up" aria-label="Avanzar">▲</button><div><button type="button" data-key="left" aria-label="Izquierda">◀</button><button type="button" data-key="down" aria-label="Retroceder">▼</button><button type="button" data-key="right" aria-label="Derecha">▶</button></div></div>
+      <div class="actions"><button type="button" id="pulse" class="scan">Pulso escáner <span>12%</span></button><button type="button" id="pause" class="ghost">Pausar</button><button type="button" id="restart" class="ghost">Reiniciar</button></div>
+    </section>
+    <p class="status" id="status" role="status" aria-live="polite">Flechas/WASD para moverte · espacio para escanear · funciona también con los controles táctiles.</p>
+    <section class="tips"><span>⌖ recoge los objetivos ámbar</span><span>◌ el pulso revela muestras cercanas</span><span>⚠ evita tormentas y zonas rojas</span></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
