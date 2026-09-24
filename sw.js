@@ -11,6 +11,7 @@ const ASSETS = [
   './juegos/atlas-command/', './juegos/atlas-command/index.html', './juegos/atlas-command/styles.css', './juegos/atlas-command/app.js',
   './juegos/survey-sprint/', './juegos/survey-sprint/index.html', './juegos/survey-sprint/styles.css', './juegos/survey-sprint/app.js'
   , './juegos/carto-rally/', './juegos/carto-rally/index.html', './juegos/carto-rally/styles.css', './juegos/carto-rally/app.js'
+  , './juegos/atlas-frontier/', './juegos/atlas-frontier/index.html', './juegos/atlas-frontier/styles.css', './juegos/atlas-frontier/app.js'
 ];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));

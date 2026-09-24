@@ -19,6 +19,7 @@ Colección de juegos web gratuitos, estáticos y ejecutables en el navegador.
 - [Atlas Command](juegos/atlas-command/): campaña de tres mapas con balizas, energía, créditos, mejoras y unidades enemigas.
 - [Survey Sprint](juegos/survey-sprint/): campaña de prospección de tres zonas con rover, escáner, muestras, batería y peligros.
 - [Carto Rally](juegos/carto-rally/): campeonato de tres circuitos con checkpoints, trazada, velocidad, turbo y controles táctiles.
+- [Atlas Frontier](juegos/atlas-frontier/): estrategia hexagonal por turnos con exploración, recursos, campamentos, inteligencia y frontera rival.
 
 ## Desarrollo
 
