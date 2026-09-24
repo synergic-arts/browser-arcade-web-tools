@@ -2,3 +2,6 @@
 .survey .art{color:#ffd29b;background:linear-gradient(135deg,#8d3c59,#3b264f);text-shadow:0 0 20px #ff9b72}
 .rally .art{color:#ffe48e;background:linear-gradient(135deg,#7b3f65,#26345e);text-shadow:0 0 22px #ffd477}
 .frontier .art{color:#8ce8d6;background:linear-gradient(135deg,#245d6d,#273767);text-shadow:0 0 22px #70e2d0}
+.rescue .art{color:#ffd273;background:radial-gradient(circle,#8a5f34,#243551 70%);text-shadow:0 0 22px #ffd273}
+.game-card:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+@media(max-width:520px){.shell{padding:34px 13px}.games{grid-template-columns:1fr;gap:12px}.game-card{grid-template-columns:70px 1fr;padding:15px;border-radius:16px}.game-card .art{font-size:2.4rem}.game-card h2{font-size:1.25rem}.game-card p:not(.tag){font-size:.92rem}}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="Juego de exploración cartográfica con rover, balizas, relieve y tormentas.">
+  <title>Geo Rescue · Browser Arcade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header class="topbar"><a href="../../">← Browser Arcade</a><span class="badge">exploración · móvil</span><p class="eyebrow">misión de rescate cartográfico</p><h1>Geo Rescue</h1><p class="intro">Conduce un rover por un mapa de relieve, localiza cinco balizas perdidas y vuelve a la base antes de quedarte sin batería. Cada partida genera un territorio distinto.</p></header>
+    <section class="hud" aria-label="Estado de la misión"><div><span>Balizas</span><b id="beacons">0 / 5</b></div><div><span>Batería</span><b id="battery">100 %</b></div><div><span>Puntos</span><b id="score">0</b></div><div><span>Récord</span><b id="best">0</b></div></section>
+    <section class="stage"><canvas id="canvas" aria-label="Mapa de exploración de Geo Rescue"></canvas><div class="overlay" id="overlay"><p class="eyebrow">operación de campo</p><h2 id="overlayTitle">Geo Rescue</h2><p id="overlayText">Encuentra las cinco balizas y utiliza el escáner para revelar el relieve y las tormentas cercanas.</p><button id="start" class="primary" type="button">Iniciar misión</button></div></section>
+    <section class="controls" aria-label="Controles de la misión">
+      <div class="dpad" aria-label="Mover rover">
+        <button type="button" data-move="up" aria-label="Mover arriba">▲</button>
+        <button type="button" data-move="left" aria-label="Mover izquierda">◀</button>
+        <button type="button" data-move="down" aria-label="Mover abajo">▼</button>
+        <button type="button" data-move="right" aria-label="Mover derecha">▶</button>
+      </div>
+      <div class="actions"><button id="scan" class="scan" type="button">Escanear <span>−4 %</span></button><button id="boost" class="boost" type="button">Impulso <span>−8 %</span></button><button id="pause" class="ghost" type="button">Pausar</button></div>
+    </section>
+    <p id="status" class="status" role="status" aria-live="polite">Usa las flechas, WASD o el pad táctil para mover el rover.</p>
+    <section class="tips"><span>◉ escanea para descubrir balizas</span><span>▰ evita agua y roca</span><span>⚡ las tormentas consumen batería</span></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
